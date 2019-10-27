@@ -161,10 +161,15 @@ public class UserHttpController {
                                 student_id = result.getJSONObject(i).getInt("student_id");
                                 attendance = result.getJSONObject(i).getInt("attendance");
                                 time = result.getJSONObject(i).getString("time");
-                                sb.append("student_id: " + student_id + "\n");
-                                sb.append("Attendance result: " + attendance + "\n");
-                                sb.append("time:"+ time +"\n");
-
+                                if(attendance == 1){
+                                    sb.append("student_id: " + student_id + "\n");
+                                    sb.append("Attendance result: Attendance\n");
+                                    sb.append("time:"+ time +"\n");
+                                }else{
+                                    sb.append("student_id: " + student_id + "\n");
+                                    sb.append("Attendance result: Absent\n");
+                                    sb.append("time:"+ time +"\n");
+                                }
                             }
                             textView.setText(sb.toString());
                         } else {
