@@ -30,18 +30,36 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".Student4"></activity>
-        <activity android:name=".Student3" />
-        <activity android:name=".Student2" />
-        <activity android:name=".Student1" />
-        <activity android:name=".List" />
-        <activity android:name=".password" />
-        <activity android:name=".result" />
-        <activity android:name=".Local" />
-        <activity android:name=".teacher_course" />
+        <activity android:name=".Student4"
+            android:label="student id: 1630003064"
+            />
+        <activity android:name=".Student3"
+            android:label="student id: 1630003020"
+            />
+        <activity android:name=".Student2"
+            android:label="student id: 1630003010"
+            />
+        <activity android:name=".Student1"
+            android:label="student id: 1"
+            />
+        <activity android:name=".List"
+            android:label="Student List"
+            />
+        <activity android:name=".password"
+            android:label="Change Password"
+            />
+        <activity android:name=".result"
+            android:label="Result"
+            />
+        <activity android:name=".Local"
+            android:label="Teacher Location"
+            />
+        <activity android:name=".teacher_course"
+            android:label="Course"
+            />
         <activity
             android:name=".BaiDuMapActivity"
-            android:label="Sign in"
+            android:label="Map of Attendance"
             android:parentActivityName=".result" />
 
         <meta-data
@@ -50,7 +68,7 @@
 
         <activity
             android:name=".LoginActivity"
-            android:label="@string/title_activity_login"
+            android:label="Teacher Client"
             android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
