@@ -156,9 +156,9 @@ public class BaiDuMapActivity extends AppCompatActivity {
                             int attendance;
                             for (int i = 0; i < locations.length(); i++) {
                                 //get attendance result and longitude and latitude for all students
-                                    attendance = locations.getJSONObject(i).getInt("attendance");
-                                    longtitude = locations.getJSONObject(i).getDouble("longitude");
-                                    latitude = locations.getJSONObject(i).getDouble("latitude");
+                                     attendance = locations.getJSONObject(i).getInt("attendance");
+                                     longtitude = locations.getJSONObject(i).getDouble("longitude");
+                                     latitude = locations.getJSONObject(i).getDouble("latitude");
                                      LatLng dbPoint = new LatLng(latitude, longtitude);
                                      //transform the location info to Baidu MAP
                                      CoordinateConverter converter = new CoordinateConverter()
@@ -166,13 +166,13 @@ public class BaiDuMapActivity extends AppCompatActivity {
                                         .coord(dbPoint);
                                      LatLng desLatLng = converter.convert();
                                      //if the attendance result is 0, show it in green point
-                                    if (attendance == 0) {
+                                     if (attendance == 0) {
                                         addOthersLocation1(desLatLng.longitude, desLatLng.latitude);
-                                    }
-                                    //else show it is red point
-                                    else{
+                                     }
+                                     //else show it is red point
+                                     else{
                                         addOthersLocation(desLatLng.longitude, desLatLng.latitude);
-                                    }
+                                     }
                             }
                         } else {
                             Log.i("call failed", "diu lei lou mou");

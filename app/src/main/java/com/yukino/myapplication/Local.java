@@ -200,7 +200,7 @@ public class Local extends AppCompatActivity{
 
                         @Override
                         public void fail() {
-                            Toast.makeText(Local.this, "uploading location",Toast.LENGTH_SHORT).show();
+//                            Toast.makeText(Local.this, "uploading location",Toast.LENGTH_SHORT).show();
                         }
                     });
         } else {
